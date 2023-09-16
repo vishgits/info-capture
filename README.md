@@ -22,6 +22,7 @@ Run `ng test` for excecuting the unit test and check the coverage
 * Authgaurd is implemented to restrict the unauthorized access to the application
 * Added a header with a logo (logo of direct line group)and named the application as Info Capture
 * All the components have been designed to meet accessibility standards, which will helpful for screen readers
+* Used Mockoon for the mock endpoint, that is running in http://localhost:3000/
 
 
 

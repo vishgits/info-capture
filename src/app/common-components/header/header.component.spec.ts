@@ -18,4 +18,10 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the image and heading', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('img')?.src).toContain('assets/logo.png');
+    expect(compiled.querySelector('h4')?.textContent).toContain('Info Capture App');
+  });
 });

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   template: '<p>Info Capture App</p>'
 })
-class MockAppHeader {}
+class MockAppHeaderComponent {}
 
 describe('AppComponent', () => {
 
@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-    declarations: [AppComponent, MockAppHeader]
+    declarations: [AppComponent, MockAppHeaderComponent]
     });
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;

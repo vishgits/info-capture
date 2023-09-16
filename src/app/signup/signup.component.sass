@@ -1,44 +1,42 @@
-$hunder_percentage : 100%
-$layout-bp-sm:768px
-$fourty-px:40px
+@import '../_variables.sass'
 section
     position: absolute
-    top: 50%
-    left:50%
-    transform: translate(-50%, -50%)
+    top: $fifty_percentage
+    left:$fifty_percentage
+    transform: translate(-$fifty_percentage, -$fifty_percentage)
     padding: 10px
     .form-container 
         padding: 20px
-        background : #ffffff
+        background : $white-color
         max-width : 400px
         min-height : 500px
-        border : 1px solid #d2d1d3
+        border : $more-lighter-border
         box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px
         @media screen  and (max-width: $layout-bp-sm)
             min-width : calc($hunder_percentage - $fourty-px)
         h3
-            font-weight : 300
+            font-weight : $light-font-weight
             text-align : center
         small
             font-size: 16px
-            font-weight: 300
-            color: #999
+            font-weight: $light-font-weight
+            color: $light-color
             margin-bottom: 30px
             display: block
             text-align: center
             a
-                color: #558fb5
+                color: $light-anchor-color
                 text-decoration : none 
    
     @media screen  and (max-width: $layout-bp-sm)
         display: block
         width: calc($hunder_percentage - $fourty-px)
-    @media screen  and (max-width: 375px)
+    @media screen  and (max-width: $layout-sm )
         top: 63%
 .error-banner
     padding : 10px 0
     text-align : center
-    color:#cf3a3a
+    color : $danger-color
 
 
     

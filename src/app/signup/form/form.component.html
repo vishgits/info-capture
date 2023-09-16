@@ -1,17 +1,17 @@
 <div class="container">
     <form action="#" method="post" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <label for="first-name" role="heading" tabindex="6" aria-label="First Name">First Name</label>
+            <label for="first-name" role="heading" tabindex="6" aria-label="First Name" aria-level="2">First Name</label>
             <input type="text" id="first-name" formControlName="firstName" required tabindex="7">
             <div class="error-message" *ngIf="validateInput('firstName')" role="alert" tabindex="8" aria-label="Enter a valid first name.">Enter a valid first name.</div>
         </div>
         <div class="form-group">
-            <label for="last-name" role="heading" tabindex="9" aria-label="Last Name">Last Name</label>
+            <label for="last-name" role="heading" tabindex="9" aria-label="Last Name" aria-level="2">Last Name</label>
             <input type="text" id="last-name" formControlName="lastName" tabindex="10" required>
             <div class="error-message" *ngIf="validateInput('lastName')" role="alert" tabindex="11" aria-label="Enter a valid last name.">Enter a valid last name.</div>
         </div>
         <div class="form-group">
-            <label for="email" role="heading" tabindex="12" aria-label="Email Address">Email Address</label>
+            <label for="email" role="heading" tabindex="12" aria-label="Email Address" aria-level="2">Email Address</label>
             <input type="email" id="email" required formControlName="email" tabindex="13" required>
             <div class="error-message" *ngIf="validateInput('email')" role="alert" tabindex="14" aria-label="Enter a valid email address">Enter a valid email address.</div>
         </div>

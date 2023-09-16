@@ -15,18 +15,17 @@ export class SignupComponent {
   constructor(private signUpService: SignupService , private router: Router, private storageService : StorageService){
 
   }
-  public isError : boolean = false;
+  public isError = false;
   saveUserInfo(userInfo: UserInfo): void {
     this.signUpService.sendUserInfo(userInfo).subscribe(this.saveObserver)
   }
 
   saveObserver = {
     next:(result: Response) =>{
-      console.log('unit test pending');
-      this.storageService.setDataToSession(result)
-      this.router.navigate(['/', 'user-profile']);
+      this.storageService.setDataToSession(result);
+      this.router.navigate(['/user-profile']);
     },
-    error: (error: Response) =>{
+    error: () =>{
       this.isError = true;
     }
   }

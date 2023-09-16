@@ -5,10 +5,9 @@ import { Response } from '../interface/api-response';
   providedIn: 'root'
 })
 export class StorageService {
-
-  constructor() { }
+  
   setDataToSession(res: Response): void {
-    sessionStorage.setItem('userId', JSON.stringify(res.userId));
+    sessionStorage.setItem('userId', res.userId);
   }
   getDataFromSession(): string | null {
     return sessionStorage.getItem('userId');

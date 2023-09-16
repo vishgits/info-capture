@@ -1,0 +1,50 @@
+$margin-bottom: 30px
+$ten-px: 10px
+$five-px: 5px
+$hunder_percentage: 100%
+$input-border: 1px solid #ccc
+$input-border-radius: 5px
+$button-bg-color: #0377c5
+$button-color: #fff
+$button-padding: 10px 20px
+$button-border-radius: 5px
+$button-hover-bg-color: #0377c5d9
+.form-group
+    margin-bottom : $margin-bottom
+label
+    display: block
+    font-weight : 300
+    margin-bottom : $five-px
+    font-size: 14px
+input[type="text"],
+input[type="email"]
+    width: 100%
+    padding: $ten-px
+    border: $input-border
+    box-sizing : border-box
+    border-radius: $input-border-radius
+.error-message 
+  color: #cc0033
+  display: inline-block
+  font-size: 12px
+  line-height: 15px
+  margin: 5px 0 0
+button
+    background-color: $button-bg-color
+    color: $button-color
+    padding: $button-padding
+    border: none
+    border-radius: $button-border-radius
+    cursor: pointer
+    width: $hunder_percentage
+    font-size: 18px
+    &:hover
+      background-color: $button-hover-bg-color
+.form-info
+    margin-bottom : 20px
+    small
+        font-style: italic
+        color: #9a9090
+        a
+            color: #558fb5
+            text-decoration : none

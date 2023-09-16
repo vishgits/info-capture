@@ -1,0 +1,12 @@
+<section>
+    <div *ngIf="isError" class="error-banner" role="heading" tabindex="4" aria-label="Something went wrong! Please try again later">Something went wrong! Please try again later</div>
+    <div class="form-container">
+        <div class="title">
+            <h3 role="heading" tabindex="4" aria-label="Create Your Account">Create Your Account </h3>
+            <small role="heading" tabindex="5" aria-label="One account for capturing your details">One account for capturing your details <a href="javascript:void(0)" tabindex="4">Learn more</a></small>
+        </div>
+        <div>
+            <app-form (saveForm)="saveUserInfo($event)"></app-form>
+        </div>
+    </div>
+</section>
